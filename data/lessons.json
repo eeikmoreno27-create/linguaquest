@@ -1,0 +1,68 @@
+[
+  {
+    "id": "beginner",
+    "title": "Beginner (A1)",
+    "description": "Saludos, presentaciones, n\u00fameros, colores.",
+    "lessons": [
+      {
+        "id": "b1",
+        "title": "Greetings",
+        "text": "Hello! My name is Ana. Nice to meet you."
+      },
+      {
+        "id": "b2",
+        "title": "Numbers 1-10",
+        "text": "One, two, three, four, five, six, seven, eight, nine, ten."
+      },
+      {
+        "id": "b3",
+        "title": "Colors",
+        "text": "Red, blue, green, yellow, black, white."
+      }
+    ]
+  },
+  {
+    "id": "intermediate",
+    "title": "Intermediate (B1)",
+    "description": "Tiempos verbales, preguntas y respuestas.",
+    "lessons": [
+      {
+        "id": "i1",
+        "title": "Past Simple",
+        "text": "I went to the store yesterday."
+      },
+      {
+        "id": "i2",
+        "title": "Present Perfect",
+        "text": "I have visited Paris several times."
+      },
+      {
+        "id": "i3",
+        "title": "Daily Routine",
+        "text": "I wake up, brush my teeth and have breakfast."
+      }
+    ]
+  },
+  {
+    "id": "advanced",
+    "title": "Advanced (C1)",
+    "description": "Expresiones, condicionales, debate.",
+    "lessons": [
+      {
+        "id": "a1",
+        "title": "Conditionals",
+        "text": "If I had more time, I would learn another language."
+      },
+      {
+        "id": "a2",
+        "title": "Idioms",
+        "text": "It's a piece of cake. Break a leg."
+      },
+      {
+        "id": "a3",
+        "title": "Discussion",
+        "text": "Climate change requires urgent and global cooperation."
+      }
+    ]
+  }
+]

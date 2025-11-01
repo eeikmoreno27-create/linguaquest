@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LinguaQuest — Aprende inglés jugando</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar">
+      <div class="brand">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <rect x="1" y="1" width="22" height="22" rx="6" fill="#2563eb"/>
+          <path d="M7 15c1-2 3-3 5-3s4 1 5 3" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="12" cy="9" r="2" fill="#fff"/>
+        </svg>
+        <div>
+          <h1>LinguaQuest</h1>
+          <small>Aprende inglés jugando</small>
+        </div>
+      </div>
+
+      <div class="top-controls">
+        <div id="user-area"></div>
+        <button id="btn-theme" class="btn-ghost" title="Toggle dark">🌓</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <aside class="sidebar card">
+        <section class="profile card-section">
+          <h3>Tu cuenta</h3>
+          <div id="auth-box"></div>
+          <div class="stat-row">
+            <div>
+              <strong id="xp-count">0</strong>
+              <div class="muted">XP</div>
+            </div>
+            <div>
+              <strong id="streak-count">0</strong>
+              <div class="muted">racha</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="levels card-section">
+          <h3>Niveles</h3>
+          <ul id="levels-list" class="levels-list"></ul>
+        </section>
+
+        <section class="actions card-section">
+          <button id="btn-random" class="btn-primary">Jugar aleatorio 🎲</button>
+          <button id="btn-export" class="btn-ghost">Exportar progreso</button>
+        </section>
+      </aside>
+
+      <section class="mainview">
+        <div id="home-view" class="card view">
+          <h2>Bienvenido a LinguaQuest</h2>
+          <p>Práctica por niveles, juegos, pronunciación y progresión tipo RPG. Selecciona un nivel y comienza a jugar.</p>
+          <div class="cards-grid" id="levels-cards"></div>
+        </div>
+
+        <div id="lesson-view" class="card view hidden">
+          <div class="lesson-header">
+            <button id="btn-back" class="btn-ghost">← Volver</button>
+            <div>
+              <h2 id="lesson-title">Lección</h2>
+              <small id="lesson-level" class="muted">Nivel</small>
+            </div>
+          </div>
+          <div id="lesson-body" class="lesson-body"></div>
+        </div>
+
+        <div id="game-view" class="card view hidden">
+          <div class="lesson-header">
+            <button id="btn-back2" class="btn-ghost">← Volver</button>
+            <h2 id="game-title">Juego</h2>
+          </div>
+          <div id="game-area"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Hecho con ❤️ — LinguaQuest · Sube a GitHub Pages (branch main → root)</small>
+    </footer>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+  <script src="./firebase-config.js"></script>
+</body>
+</html>
